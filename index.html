@@ -2,135 +2,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-        content="Creative web design and development services">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative web design and app development services">
+    <meta name="author" content="W4B">
+    <title>Creative Digital Agency</title>
 
-  <title>Creative Digital Agency</title>
-
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i">
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header>
-    <div class="container header-content">
-      <h1>logo</h1>
-      <img src="images/menu.svg" alt="Menu">
-    </div>
-  </header>
 
-  <main>
-    <section class="services">
-      <div class="container">
-        <article class="app-demo">
-          <h2>App Development</h2>
-          <p>We create modern digital experiences.</p>
-          <img src="images/blue_phone.png"
-               alt="Mobile app demonstration">
-        </article>
-
-        <div class="service-grid">
-          <article class="service-card">
-            <img src="images/code.svg" alt="">
-            <h3>Clean Code</h3>
-            <p>Modern and efficient development.</p>
-          </article>
-
-          <article class="service-card">
-            <img src="images/design.svg" alt="">
-            <h3>Web Design</h3>
-            <p>Beautiful and responsive websites.</p>
-          </article>
-
-          <article class="service-card">
-            <img src="images/development.svg" alt="">
-            <h3>Development</h3>
-            <p>Creative development solutions.</p>
-          </article>
-
-          <article class="service-card">
-            <img src="images/branding.svg" alt="">
-            <h3>Branding</h3>
-            <p>Build a memorable brand.</p>
-          </article>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">logo</a>
+            <button class="menu-button" type="button" aria-label="Open navigation">
+                <img src="images/menu.svg" alt="">
+            </button>
         </div>
-      </div>
-    </section>
+    </header>
 
-    <section class="planning">
-      <div class="container">
-        <h2>Strategic Planning</h2>
-        <img src="images/idea_man.png"
-             alt="Planning illustration">
-        <p>We help businesses plan for success.</p>
-        <img src="images/waving_woman.png"
-             alt="Creative team illustration">
-      </div>
-    </section>
+    <main>
 
-    <section class="testimonials">
-      <div class="container">
-        <h2>Testimonials</h2>
-        <div class="testimonial-grid">
-          <article>
-            <img src="images/testimonial_one.jpg"
-                 alt="Customer one">
-            <p>Great service and creative work!</p>
-          </article>
+        <!-- SERVICES -->
+        <section class="services">
 
-          <article>
-            <img src="images/testimonial_two.jpg"
-                 alt="Customer two">
-            <p>Excellent development experience.</p>
-          </article>
+            <article class="service-card app-demo">
+                <div class="demo-content">
+                    <h2>Get a demo application</h2>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur
+                        excepteur sint mollit anim id.
+                    </p>
+                    <a href="#pricing" class="demo-button">
+                        <img src="images/apple.svg" alt="">
+                        App Store
+                    </a>
+                </div>
+                <img class="phone-image"
+                     src="images/blue_phone.png"
+                     alt="Mobile application preview">
+            </article>
 
-          <article>
-            <img src="images/testimonial_three.jpg"
-                 alt="Customer three">
-            <p>Professional and reliable team.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+            <article class="service-card clean-code">
+                <img src="images/code.svg" alt="">
+                <h2>Clean Code</h2>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </article>
 
-    <section class="benefits">
-      <div class="container">
-        <h2>Benefits of Working With Us</h2>
-        <div class="benefits-grid">
-          <article><h3>01</h3><p>Quality</p></article>
-          <article><h3>02</h3><p>Creativity</p></article>
-          <article><h3>03</h3><p>Experience</p></article>
-          <article><h3>04</h3><p>Support</p></article>
-          <article><h3>05</h3><p>Innovation</p></article>
-          <article><h3>06</h3><p>Results</p></article>
-        </div>
-      </div>
-    </section>
+            <article class="service-card web-design">
+                <img src="images/design.svg" alt="">
+                <h2>Web Design</h2>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </article>
 
-    <section class="about">
-      <div class="container">
-        <h2>About Us</h2>
-        <p>We are passionate about digital solutions.</p>
-        <img src="images/boss.jpg" alt="Our team leader">
-      </div>
-    </section>
+            <article class="service-card development">
+                <img src="images/development.svg" alt="">
+                <h2>Development</h2>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </article>
 
-    <section class="pricing">
-      <div class="container">
-        <h2>It's Free!</h2>
-        <p>Start your journey with us today.</p>
-        <a href="#top" class="button">Get Started</a>
-      </div>
-    </section>
-  </main>
+            <article class="service-card branding">
+                <img src="images/branding.svg" alt="">
+                <h2>Branding</h2>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate
+                    velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+            </article>
 
-  <footer>
-    <p>Copyright 2026. All rights reserved.</p>
-  </footer>
+        </section>
+
+        <!-- STRATEGIC PLANNING -->
+        <section class="planning">
+            <div class="planning-container">
+
+                <article class="planning-info">
+                    <img src="images/waving_woman.png"
+                         alt="Strategic planning illustration">
+
+                    <h2>Strategic Planning</h2>
+                    <p>
+                        Egestas dui id ornare arcu odio. In pellentesque
+                        massa placerat duis ultricies lacus sed turpis
+                        tincidunt id. Facilisis mauris sit amet massa
+                        vitae tortor condimentum lacinia quis.
+                    </p>
+                </article>
+
+                <article class="app-development">
+                    <img src="images/idea_man.png"
+                         alt="App development illustration">
+                    <h3>App Development</h3>
+                    <p>
+                        Develop an on-demand app for your delivery business
+                        to reach your targeted customers without any
+                        interruption.
+                    </p>
+                    <a href="#benefits" aria-label="Explore benefits">
+                        <img src="images/arrow.svg" alt="">
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials">
+            <div class="section-intro">
+                <span>TESTIMONIALS</span>
+                <h2>We are committed expert partners</h2>
+                <p>
+                    We place huge value on strong relationships and have
+                    seen the benefit they bring to our business.
+                    Customer feedback is vital in helping us to get it right.
+                </p>
+            </div>
+
+            <div class="testimonial-list">
+
+                <article class="testimonial testimonial-one">
+                    <img src="images/testimonial_one.jpg"
+                         alt="Portrait of Nat Reynolds">
+                    <div>
+                        <p>
+                            ❝ Vitae suscipit tellus mauris a diam maecenas
+                            sed enim ut. Mauris augue neque gravida in
+                            fermentum. Praesent semper feugiat nibh sed
+                            pulvinar proin.
+                        </p>
+                        <h3>NAT REYNOLDS</h3>
+                    </div>
+                </article>
+
+                <article class="testimonial testimonial-two">
+                    <img src="images/testimonial_two.jpg"
+                         alt="Portrait of Celia Almeda">
+                    <div>
+                        <p>
+                            ❝ Pharetra vel turpis nunc eget lorem.
+                            Quisque id diam vel quam elementum pulvinar
+                            etiam. Urna porttitor rhoncus dolor purus.
+                            
+                        </p>
+                        <h3>CELIA ALMEDA</h3>
+                    </div>
+                </article>
+
+                <article class="testimonial testimonial-three">
+                    <img src="images/testimonial_three.jpg"
+                         alt="Portrait of Bob Roberts">
+                    <div>
+                        <p>
+                            ❝ Mauris augue neque gravida in fermentum.
+                            Praesent semper feugiat nibh sed pulvinar
+                            proin. Nibh nisl condimentum id venenatis'.
+                        </p>
+                        <h3>BOB ROBERTS</h3>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- BENEFITS -->
+        <section class="benefits" id="benefits">
+            <h2>Benefits of working with us</h2>
+
+            <div class="benefits-grid">
+
+                <article class="benefit-card">
+                    <h3>01</h3>
+                    <h4>High Quality</h4>
+                    <p>
+                        Vitae suscipit tellus mauris a diam maecenas
+                        sed enim ut. Mauris augue neque gravida
+                        in fermentum.
+                    </p>
+                    <a href="#about">more</a>
+                </article>
+
+                <article class="benefit-card">
+                    <h3>02</h3>
+                    <h4>Creative Team</h4>
+                    <p>
+                        Vitae suscipit tellus mauris a diam maecenas
+                        sed enim ut. Mauris augue neque gravida
+                        in fermentum.
+                    </p>
+                    <a href="#about">more</a>
+                </article>
+
+                <article class="benefit-card">
+                    <h3>03</h3>
+                    <h4>Amazing Results</h4>
+                    <p>
+                        Vitae suscipit tellus mauris a diam maecenas
+                        sed enim ut. Mauris augue neque gravida
+                        in fermentum.
+                    </p>
+                    <a href="#about">more</a>
+                </article>
+
+                <article class="benefit-card">
+                    <h3>04</h3>
+                    <h4>Best Pricing</h4>
+                    <p>
+                        Vitae suscipit tellus mauris a diam maecenas
+                        sed enim ut. Mauris augue neque gravida
+                        in fermentum.
+                    </p>
+                    <a href="#pricing">more</a>
+                </article>
+
+                <article class="benefit-card">
+                    <h3>05</h3>
+                    <h4>Innovations</h4>
+                    <p>
+                        Vitae suscipit tellus mauris a diam maecenas
+                        sed enim ut. Mauris augue neque gravida
+                        in fermentum.
+                    </p>
+                    <a href="#about">more</a>
+                </article>
+
+                <article class="benefit-card">
+                    <h3>06</h3>
+                    <h4>24/7 Support</h4>
+                    <p>
+                        Vitae suscipit tellus mauris a diam maecenas
+                        sed enim ut. Mauris augue neque gravida
+                        in fermentum.
+                    </p>
+                    <a href="#about">more</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ABOUT US -->
+        <section class="about" id="about">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    Sample text. Click to select the text box.
+                    Egestas egestas fringilla phasellus faucibus
+                    scelerisque eleifend donec pretium vulputate.
+                    Pharetra magna ac placerat vestibulum.
+                    Quam lacus suspendisse faucibus interdum posuere
+                    lorem. Egestas tellus rutrum tellus pellentesque.
+                </p>
+                <p>
+                    Quis viverra nibh cras pulvinar mattis.
+                    Ornare arcu dui vivamus arcu felis bibendum
+                    ut tristique. Pellentesque eu tincidunt
+                    tortor aliquam nulla facilisi cras fermentum odio.
+                </p>
+            </div>
+
+            <aside class="about-profile">
+                <img src="images/boss.jpg"
+                     alt="Company director">
+                <h3>
+                    I help companies tincidunt tortor aliquam
+                    nulla facilisi cras fermentum odio.
+                </h3>
+                <a href="https://www.linkedin.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="linkedin-button">
+                    <img src="images/linkedin.svg" alt="">
+                    Find me on LinkedIn
+                </a>
+            </aside>
+        </section>
+
+        <!-- PRICING -->
+        <section class="pricing" id="pricing">
+            <span>GET STARTED</span>
+            <h2>Simple, Transparent Pricing</h2>
+            <h3>It's Free!</h3>
+            <p>
+                We're still in beta and we will be for awhile.
+                As we add more functionality, we'll look into
+                other plans with more controls.
+            </p>
+            <a href="mailto:info@example.com" class="get-started">
+                Get Started
+            </a>
+            <small>Copyright 2026 · Terms of Service · Privacy Policy</small>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>
+            Sample text. Click to select the text box.
+            Click again or double click to start editing the text.
+        </p>
+    </footer>
+
 </body>
 </html>
-

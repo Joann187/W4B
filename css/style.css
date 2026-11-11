@@ -1,130 +1,547 @@
 
+/* GLOBAL STYLES */
+:root {
+    --blue: #0784f9;
+    --purple: #9690e6;
+    --light-purple: #f2f2ff;
+    --pink: #ffcccc;
+    --yellow: #ffe4bc;
+    --green: #c8f0dd;
+    --lavender: #d7d4f3;
+    --dark: #333333;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
-  line-height: 1.6;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--dark);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+a {
+    text-decoration: none;
 }
 
-header {
-  background-color: #6c63ff;
-  padding: 20px 0;
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+/* HEADER */
+.site-header {
+    background: var(--blue);
+    color: white;
 }
 
 .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header h1 {
-  color: white;
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-header img {
-  width: 30px;
+.menu-button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
 }
 
-section {
-  padding: 50px 0;
+.menu-button img {
+    width: 24px;
 }
 
-h2 {
-  margin-bottom: 20px;
+/* SERVICES - MOBILE */
+.services {
+    max-width: 1200px;
+    margin: 50px auto 70px;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
 }
 
-.service-grid,
-.testimonial-grid,
+.service-card {
+    border-radius: 14px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.service-card > img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.service-card h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.app-demo {
+    background: #b4ddff;
+    color: var(--blue);
+    text-align: left;
+    padding: 30px 25px 0;
+    overflow: hidden;
+}
+
+.app-demo h2 {
+    font-size: 25px;
+}
+
+.demo-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background: var(--blue);
+    color: white;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.demo-button img {
+    width: 16px;
+}
+
+.app-demo .phone-image {
+    display: block;
+    width: 75%;
+    max-width: 260px;
+    height: auto;
+    margin: 20px auto 0;
+}
+
+.clean-code {
+    background: var(--green);
+    color: #54c78b;
+}
+
+.web-design {
+    background: var(--pink);
+    color: #ff7777;
+}
+
+.development {
+    background: var(--yellow);
+    color: #ffad42;
+}
+
+.branding {
+    background: var(--lavender);
+    color: #8581e5;
+}
+
+/* STRATEGIC PLANNING */
+.planning {
+    background: var(--purple);
+    color: white;
+    padding: 70px 20px 45px;
+}
+
+.planning-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+
+.planning-info > img {
+    width: 100%;
+    max-width: 440px;
+    display: block;
+    margin: 0 auto 45px;
+}
+
+.planning-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.planning-info p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.app-development {
+    background: white;
+    color: var(--dark);
+    border-radius: 35px;
+    padding: 30px;
+    text-align: center;
+}
+
+.app-development > img {
+    width: 100%;
+    max-width: 270px;
+}
+
+.app-development h3 {
+    font-size: 20px;
+}
+
+.app-development p {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.app-development a img {
+    width: 35px;
+    margin-top: 15px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    padding: 65px 20px;
+}
+
+.section-intro {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.section-intro span {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.section-intro h2 {
+    color: var(--purple);
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.section-intro p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.testimonial-list {
+    max-width: 750px;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+}
+
+.testimonial {
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+.testimonial h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.testimonial-one {
+    background: #ffbfc4;
+}
+
+.testimonial-two {
+    background: #ffdfac;
+}
+
+.testimonial-three {
+    background: #b5e9ce;
+}
+
+/* BENEFITS */
+.benefits {
+    background: var(--purple);
+    padding: 50px 15px;
+}
+
+.benefits > h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
 .benefits-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
-.service-card,
-.testimonial-grid article,
-.benefits-grid article {
-  padding: 25px;
-  border-radius: 15px;
-  background-color: white;
+.benefit-card {
+    background: var(--light-purple);
+    border-radius: 15px;
+    padding: 30px;
 }
 
-.service-card img {
-  width: 70px;
+.benefit-card h3 {
+    color: var(--purple);
+    font-size: 55px;
+    margin-bottom: 10px;
 }
 
-.planning,
-.pricing {
-  background-color: #6c63ff;
-  color: white;
+.benefit-card h4 {
+    color: var(--purple);
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 
-.testimonials,
+.benefit-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.benefit-card a {
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--purple);
+    color: white;
+    border-radius: 25px;
+    letter-spacing: 2px;
+}
+
+/* ABOUT US */
 .about {
-  background-color: #f5f5f5;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px 120px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
 }
 
-.testimonial-grid img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+.about-text h2 {
+    color: var(--purple);
+    font-size: 45px;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 30px;
+.about-text p {
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 25px;
 }
 
-@media screen and (min-width: 768px) {
-  .service-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .testimonial-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .benefits-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  section {
-    padding: 70px 0;
-  }
+.about-profile > img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-@media screen and (min-width: 1024px) {
-  .service-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.about-profile h3 {
+    color: var(--purple);
+    font-size: 25px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
 
-  .testimonial-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--purple);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+}
 
-  .benefits-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.linkedin-button img {
+    width: 16px;
+}
 
-  section {
-    padding: 90px 0;
-  }
+/* PRICING */
+.pricing {
+    background: var(--purple);
+    color: white;
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.pricing > span {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.pricing h2 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.pricing h3 {
+    font-size: 65px;
+    color: #ffca70;
+    margin: 15px 0;
+}
+
+.pricing p {
+    max-width: 450px;
+    margin: 20px auto;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.get-started {
+    display: inline-block;
+    background: white;
+    color: var(--purple);
+    border-radius: 30px;
+    padding: 15px 55px;
+    font-weight: bold;
+    margin: 15px 0 25px;
+}
+
+.pricing small {
+    display: block;
+    font-size: 12px;
+}
+
+/* FOOTER */
+.site-footer {
+    background: #333333;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.site-footer p {
+    max-width: 450px;
+    margin: auto;
+    font-size: 13px;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .app-demo {
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .demo-content {
+        width: 55%;
+    }
+
+    .app-demo .phone-image {
+        width: 35%;
+        margin: 0;
+        align-self: flex-end;
+    }
+
+    .planning-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+    }
+
+    .planning-info {
+        padding-bottom: 35px;
+    }
+
+    .app-development {
+        align-self: end;
+    }
+
+    .testimonial {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        gap: 25px;
+        align-items: center;
+        text-align: left;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .app-demo {
+        grid-column: span 2;
+    }
+
+    .service-card {
+        min-height: 230px;
+    }
+
+    .planning {
+        padding-top: 90px;
+    }
+
+    .planning-container {
+        max-width: 850px;
+        gap: 50px;
+    }
+
+    .planning-info > img {
+        margin-bottom: 80px;
+    }
+
+    .app-development {
+        margin-top: 100px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about {
+        padding-bottom: 180px;
+    }
 }
