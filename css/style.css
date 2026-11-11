@@ -1,0 +1,130 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #6c63ff;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: white;
+}
+
+header img {
+  width: 30px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.service-grid,
+.testimonial-grid,
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.service-card,
+.testimonial-grid article,
+.benefits-grid article {
+  padding: 25px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.service-card img {
+  width: 70px;
+}
+
+.planning,
+.pricing {
+  background-color: #6c63ff;
+  color: white;
+}
+
+.testimonials,
+.about {
+  background-color: #f5f5f5;
+}
+
+.testimonial-grid img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section {
+    padding: 70px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .service-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section {
+    padding: 90px 0;
+  }
+}
